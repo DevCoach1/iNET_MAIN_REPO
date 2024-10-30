@@ -1,0 +1,165 @@
+main{
+	width: 100%;
+	min-height: 100vh;
+	display: flex;
+}
+
+main .left_side{
+	position: relative; 
+	flex: 1;
+}
+
+main .left_side .image_slide{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+main .left_side .image_slide .slider{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	right: 0;
+	display: flex;
+	transition: all 0.5s;
+}
+
+main .left_side .image_slide .slider img{
+	min-width: 100%;
+	object-fit: cover;
+}
+
+main .left_side .overlay{
+	background-color: rgba(0,0,0,0.4);
+	padding: 20px 20px 40px 20px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+	display: flex;
+	flex-direction: column;
+    justify-content: flex-end;
+	color: white;
+	gap: 30px;
+}
+
+main .left_side .overlay .login_steps_container{
+	display: flex;
+	gap: 10px;
+	align-items: center;
+	justify-content: space-between;
+	flex: 0 0 auto;
+}
+
+main .left_side .overlay .login_steps_container .step{
+	padding: 3px;
+	flex-basis: 30%;
+	border-radius: 10px;
+	background-color: rgba(255,255,255,0.4);
+}
+
+main .left_side .overlay .login_steps_container .active{
+	background: linear-gradient(to left, red,violet, blue);
+}
+
+main .left_side .overlay h4{
+	line-height: 2em;
+}
+
+main .right_side{
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 30px;
+	padding: 40px;
+}
+
+main .right_side p{
+	color: #999999;
+}
+
+main .right_side .hostel_or_student{
+	display: flex;
+	flex: 0 0 auto;
+	width: 100%;
+	gap: 10px;
+}
+
+main .right_side .hostel_or_student .option{
+	border: solid 2px #ccc;
+	border-radius: 10px;
+	padding: 20px;
+	display: flex;
+	flex: 1;
+	align-items: flex-start;
+	cursor: pointer;
+	justify-content: space-between;
+}
+
+main .right_side .hostel_or_student .option .message{
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	height: fit-content;
+}
+
+main .right_side .hostel_or_student .option .message img{
+	width: 50px;
+	height: 50px;
+	object-fit: cover;
+}
+
+main .right_side button{
+	cursor: pointer;
+    padding: 10px 20px;
+	width: 100%;
+    border: none;
+    background-color: black;
+    color: white;
+    transition: background-color 0.5s;
+    pointer-events: initial;
+}
+
+main .right_side button:hover{
+	background-color: orangered;
+}
+
+/* form starts here */
+main .right_side form{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 10px;
+}
+
+main .right_side form .names{
+	display: flex;
+	width: 70%;
+	gap: 10px;
+}
+
+main .right_side form input{
+	padding: 5px 10px;
+	width: 70%;
+}
+
+main .right_side form .social_signup{
+	width: 70%;
+	display: flex;
+	justify-content: space-around;
+}
+
+main .right_side form .social_signup img{
+	width: 40px;
+	height: 40px;
+	object-fit: cover;
+}
+
+@media(max-width: 700px){
+	main .left_side{
+		display: none;
+	}
+}
