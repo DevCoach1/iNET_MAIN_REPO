@@ -1,8 +1,13 @@
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Signin from "./components/Signin";
+
 function App(){
   return (
-    <div>
-      Welcome to the Hostel Hunt
-    </div>
+    <Router>
+      <Routes>
+        <Route Component={Signin} path="/signin" exact/>
+      </Routes>
+    </Router>
   )
 }
 
