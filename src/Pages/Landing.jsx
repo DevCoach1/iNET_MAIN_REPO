@@ -8,13 +8,13 @@ import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 
 function Landing(){
     return(
-        <main>
+        <main className="main_landing_page_container">
            
 
                  {/* ============================================================================================= */}
 
                  <div className="main_contact_container">
-                    <div className="social_media_and_contacts">
+                    {/* <div className="social_media_and_contacts">
                         <div className="facebook_container social_container">
                             <a href='#' className='social_link'>
                                 <FontAwesomeIcon icon={faFacebookF} className='social_icons' />
@@ -35,8 +35,8 @@ function Landing(){
                                 <FontAwesomeIcon icon={faLinkedinIn} className='social_icons'/>
                             </a>
                         </div>
-                    </div>
-                    <NavLink>
+                    </div> */}
+                    {/* <NavLink>
                         <div className="contact_details">
                             <div className="book_a_call">
                                 Book a call
@@ -45,7 +45,7 @@ function Landing(){
                                 <FontAwesomeIcon icon={faArrowRight} className='call_arrow_icon' />
                             </div>
                         </div>
-                    </NavLink>
+                    </NavLink> */}
                 </div>
 
 
